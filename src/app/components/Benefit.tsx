@@ -29,8 +29,8 @@ function BenefitBlock({ imageSrc, title, points, reverse = false }: BenefitBlock
 
       {/* Text */}
       <div className="w-full md:w-1/2">
-        <h3 className="text-2xl font-semibold text-white mb-6">{title}</h3>
-        <ul className="space-y-4 text-gray-300 list-disc list-inside">
+        <h3 className="md:text-[70px] text-3xl font-semibold  mb-6 bg-gradient-to-r from-[#7D7D7D] via-neutral-50 to-neutral-900 bg-clip-text text-transparent">{title}</h3>
+        <ul className="text-base md:text-[24px] text-[#737373]">
           {points.map((point, i) => (
             <li key={i}>{point}</li>
           ))}
@@ -47,7 +47,8 @@ export default function Benefits() {
         imageSrc="/assets/benefit1.png"
         title="Benefits to Customer"
         points={[
-          'An efficiently reliable solution for card transactions',
+          'An efficiently reliable solution for card',
+          'transactions',
           'Promotes user satisfaction',
           'Guarantees transaction security',
         ]}
@@ -56,9 +57,10 @@ export default function Benefits() {
         imageSrc="/assets/benefit2.png"
         title="Benefits to Customer"
         points={[
-          'Seamless payment processing for users',
-          'Enhanced trust with branded cards',
-          'Flexible use across platforms',
+            'An efficiently reliable solution for card',
+          'transactions',
+          'Promotes user satisfaction',
+          'Guarantees transaction security',
         ]}
         reverse
       />
