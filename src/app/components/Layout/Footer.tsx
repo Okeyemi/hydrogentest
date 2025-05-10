@@ -3,14 +3,12 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-
 import {
     Twitter,
     Linkedin,
     Facebook,
-    Github,
     Dribbble,
-    UserCircle
+    Github,
 } from 'lucide-react';
 
 const Footer = () => {
@@ -41,7 +39,7 @@ const Footer = () => {
         { icon: Twitter, name: 'Twitter' },
         { icon: Linkedin, name: 'Linkedin' },
         { icon: Facebook, name: 'Facebook' },
-        { icon: Github, name: 'Github' },
+        { icon: Github,    name: 'Github' },
         { icon: Dribbble, name: 'Dribbble' }
     ];
 
@@ -57,7 +55,7 @@ const Footer = () => {
                 >
                     <div>
                         <h4 className="text-lg font-semibold">Join our newsletter</h4>
-                        <p className="text-sm text-gray-400">
+                        <p className="text-sm md:text-base text-[#F4F4F4] font-medium">
                             We’ll send you a nice letter once per week. No spam.
                         </p>
                     </div>
@@ -65,11 +63,11 @@ const Footer = () => {
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            className="flex-1 px-4 py-2 rounded text-black outline-none"
+                            className="flex-1 px-4 py-2 rounded text-black bg-white outline-none"
                         />
                         <button
                             type="submit"
-                            className="bg-yellow-400 text-black font-semibold px-4 py-2 rounded hover:bg-yellow-300"
+                            className="bg-yellow-400 text-black font-semibold px-4 py-2 rounded hover:bg-yellow-300 cursor-pointer"
                         >
                             Subscribe
                         </button>
@@ -77,7 +75,7 @@ const Footer = () => {
                 </motion.div>
 
                 {/* Footer Content */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 text-sm">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-10 text-sm">
                     {/* Branding */}
                     <div className="col-span-2">
                         <div className="flex items-center gap-2 font-bold text-xl mb-3">
@@ -91,16 +89,16 @@ const Footer = () => {
                             />
 
                         </div>
-                        <p className="text-gray-400">
-                            Design amazing digital experiences that create more happy in the world.
+                        <p className="text-[#F4F4F4] font-medium">
+                            Design amazing digital experiences that <br/> create more happy in the world.
                         </p>
                     </div>
 
                     {/* Footer Navigation Links */}
                     {footerSections.map((section, index) => (
                         <div key={index}>
-                            <h5 className="font-semibold mb-2">{section.title}</h5>
-                            <ul className="space-y-1 text-gray-400">
+                            <h5 className="font-semibold mb-2 text-[#F5F5F5] ">{section.title}</h5>
+                            <ul className="space-y-1 text-[#F4F4F4]">
                                 {section.links.map((link) => (
                                     <li key={link}>
                                         <Link href="#" className="hover:underline">{link}</Link>
@@ -112,8 +110,13 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom */}
-                <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row md:justify-between text-sm text-gray-500">
-                    <p>© 2023 Untitled UI. All rights reserved.</p>
+                <div className="border-t border-[#FCE300] pt-6 flex flex-col md:flex-row md:justify-between text-sm text-gray-500">
+                    {/* <p>© 2023 Untitled UI. All rights reserved.</p> */}
+                        {/* write copy Right                     */}
+                        <p className='font-medium text-white'> &copy; {new Date().getFullYear()}. All rights
+            reserved.</p>
+
+                    <p></p>
                     <div className="flex gap-4 mt-4 md:mt-0 text-white">
                         {socialIcons.map(({ icon: Icon, name }) => (
                             <Link key={name} href="#" aria-label={name}>

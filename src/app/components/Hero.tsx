@@ -59,8 +59,8 @@ export default function Hero() {
                     variants={item}
                     className="flex gap-4 justify-center md:justify-start cursor-pointer"
                 >
-                    <img src="/assets/appstore.png" alt="App Store" />
-                    <img src="/assets/playstore.png" alt="Google Play" />
+                    <img src="/assets/appstore.png" alt="App Store" className='hover:bg-yellow-900' />
+                    <img src="/assets/playstore.png" alt="Google Play" className='hover:bg-yellow-900' />
                 </motion.div>
             </motion.div>
  <motion.div
@@ -69,18 +69,16 @@ export default function Hero() {
   transition={{ delay: 0.4, duration: 0.8, ease: 'easeOut' }}
   className="mt-10 md:mt-0  flex items-center justify-end flex-1 gap-0 pr-0 relative"
 >
-  {/* First image - shifted right and layered behind */}
   <motion.img
     src="/assets/father.png"
     alt="Hydrogen Card"
-    className="w-full max-w-sm absolute md:left-10 z-0"
+    className="w-full max-w-sm absolute md:left-10 md:mb-20 mb:0 z-0"
     initial={{ x: 0 }}
     animate={{ x: 14 }}
     transition={{ duration: 0.6, ease: 'easeOut' }}
   />
 
 
-  {/* Second image - flush right, layered above */}
   <img
     src="/assets/hero.png"
     alt="Hydrogen Card"

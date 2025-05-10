@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import TextReveal from './TextReveal'
+
 type POSKitCardProps = {
   title: string
   description: string
@@ -8,6 +9,27 @@ type POSKitCardProps = {
   imageSrc: string
   delay?: number
 }
+
+const kits = [
+  {
+    title: 'Restaurant Mobile',
+    kit: 'POS Kit',
+    description: 'Pick up your card from us or choose our easy delivery option',
+    imageSrc: '/assets/pos1.png',
+  },
+  {
+    title: 'Restaurant Mobile',
+    kit: 'POS Kit',
+    description: 'Pick up your card from us or choose our easy delivery option',
+    imageSrc: '/assets/pos2.png',
+  },
+  {
+    title: 'Restaurant Mobile',
+    kit: 'POS Kit',
+    description: 'Pick up your card from us or choose our easy delivery option',
+    imageSrc: '/assets/pos3.png',
+  },
+]
 
 const POSKitCard = ({ title, description, imageSrc, kit, delay = 0 }: POSKitCardProps) => {
   return (
@@ -34,26 +56,6 @@ const POSKitCard = ({ title, description, imageSrc, kit, delay = 0 }: POSKitCard
   )
 }
 
-const kits = [
-  {
-    title: 'Restaurant Mobile',
-    kit: 'POS Kit',
-    description: 'Pick up your card from us or choose our easy delivery option',
-    imageSrc: '/assets/pos1.png',
-  },
-  {
-    title: 'Restaurant Mobile',
-    kit: 'POS Kit',
-    description: 'Pick up your card from us or choose our easy delivery option',
-    imageSrc: '/assets/pos2.png',
-  },
-  {
-    title: 'Restaurant Mobile',
-    kit: 'POS Kit',
-    description: 'Pick up your card from us or choose our easy delivery option',
-    imageSrc: '/assets/pos3.png',
-  },
-]
 
 export default function POSKits() {
   return (

@@ -15,28 +15,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "HydrogenPay",
-  description: "The Future of Payments",
+  description: "Simplifying Payments for African Businesses",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  openGraph: {
-    title: "HydrogenPay",
-    description: "The Future of Payments",
-    url: "https://hydrogenpay.com",
-    siteName: "HydrogenPay",
-    images: [
-      {
-        url: "https://hydrogenpay.com/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "HydrogenPay",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
+
 };
 
 export default function RootLayout({
