@@ -21,7 +21,7 @@ const item = {
 
 export default function Hero() {
     return (
-        <section className="py-20 px-4 md:px-8 mx-auto text-center md:text-left md:flex  justify-between max-w-7xl ">
+        <section className="md:py-20 py-10 px-4 md:px-8 mx-auto text-center md:text-left md:flex  justify-between max-w-7xl ">
             <motion.div
                 initial="hidden"
                 animate="show"
