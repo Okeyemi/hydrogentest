@@ -39,7 +39,7 @@ const Footer = () => {
         { icon: Twitter, name: 'Twitter' },
         { icon: Linkedin, name: 'Linkedin' },
         { icon: Facebook, name: 'Facebook' },
-        { icon: Github,    name: 'Github' },
+        { icon: Github, name: 'Github' },
         { icon: Dribbble, name: 'Dribbble' }
     ];
 
@@ -74,9 +74,9 @@ const Footer = () => {
                     </form>
                 </motion.div>
 
-                {/* Footer Content */}
+
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-10 text-sm">
-                    {/* Branding */}
+
                     <div className="col-span-2">
                         <div className="flex items-center gap-2 font-bold text-xl mb-3">
                             <Image
@@ -90,7 +90,7 @@ const Footer = () => {
 
                         </div>
                         <p className="text-[#F4F4F4] font-medium">
-                            Design amazing digital experiences that <br/> create more happy in the world.
+                            Design amazing digital experiences that <br /> create more happy in the world.
                         </p>
                     </div>
 
@@ -109,12 +109,11 @@ const Footer = () => {
                     ))}
                 </div>
 
-                {/* Bottom */}
+
                 <div className="border-t border-[#FCE300] pt-6 flex flex-col md:flex-row md:justify-between text-sm text-gray-500">
-                    {/* <p>© 2023 Untitled UI. All rights reserved.</p> */}
-                        {/* write copy Right                     */}
-                        <p className='font-medium text-white'> &copy; {new Date().getFullYear()}. All rights
-            reserved.</p>
+
+                    <p className='font-medium text-white'> &copy; {new Date().getFullYear()}. All rights
+                        reserved.</p>
 
                     <p></p>
                     <div className="flex gap-4 mt-4 md:mt-0 text-white">

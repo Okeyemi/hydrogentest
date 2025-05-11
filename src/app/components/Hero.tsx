@@ -39,8 +39,8 @@ export default function Hero() {
                             key={i}
                             variants={item}
                             className={`block bg-gradient-to-r ${i === 1 || i === 2
-                                    ? 'from-[#7D7D7D] via-neutral-50 to-neutral-900'
-                                    : 'from-[#7D7D7D] via-neutral-100 to-[#7D7D7D]'
+                                ? 'from-[#7D7D7D] via-neutral-50 to-neutral-900'
+                                : 'from-[#7D7D7D] via-neutral-100 to-[#7D7D7D]'
                                 } bg-clip-text text-transparent`}
                         >
                             {line}
@@ -63,29 +63,29 @@ export default function Hero() {
                     <img src="/assets/playstore.png" alt="Google Play" className='hover:bg-yellow-900' />
                 </motion.div>
             </motion.div>
- <motion.div
-  initial={{ opacity: 0, x: 50 }}
-  animate={{ opacity: 1, x: 0 }}
-  transition={{ delay: 0.4, duration: 0.8, ease: 'easeOut' }}
-  className="mt-10 md:mt-0  flex items-center justify-end flex-1 gap-0 pr-0 relative"
->
-  <motion.img
-    src="/assets/father.png"
-    alt="Hydrogen Card"
-    className="w-full max-w-sm absolute md:left-10 md:mb-20 mb:0 z-0"
-    initial={{ x: 0 }}
-    animate={{ x: 14 }}
-    transition={{ duration: 0.6, ease: 'easeOut' }}
-  />
+            <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.4, duration: 0.8, ease: 'easeOut' }}
+                className="mt-10 md:mt-0  flex items-center justify-end flex-1 gap-0 pr-0 relative"
+            >
+                <motion.img
+                    src="/assets/father.png"
+                    alt="Hydrogen Card"
+                    className="w-full max-w-sm absolute md:left-10 md:mb-20 mb:0 z-0"
+                    initial={{ x: 0 }}
+                    animate={{ x: 14 }}
+                    transition={{ duration: 0.6, ease: 'easeOut' }}
+                />
 
 
-  <img
-    src="/assets/hero.png"
-    alt="Hydrogen Card"
-    className="w-full max-w-md relative"
-  />
+                <img
+                    src="/assets/hero.png"
+                    alt="Hydrogen Card"
+                    className="w-full max-w-md relative"
+                />
 
-</motion.div>
+            </motion.div>
 
 
 
