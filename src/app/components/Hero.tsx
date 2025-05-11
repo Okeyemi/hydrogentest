@@ -57,7 +57,7 @@ export default function Hero() {
 
                 <motion.div
                     variants={item}
-                    className="flex gap-4 justify-center md:justify-start cursor-pointer"
+                    className="flex gap-4 justify-between md:justify-start cursor-pointer"
                 >
                     <img src="/assets/appstore.png" alt="App Store" className='hover:bg-yellow-900' />
                     <img src="/assets/playstore.png" alt="Google Play" className='hover:bg-yellow-900' />
