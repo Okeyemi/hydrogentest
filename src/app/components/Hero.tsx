@@ -21,7 +21,7 @@ const item = {
 
 export default function Hero() {
     return (
-        <section className="md:py-20 py-10 px-4 md:px-8 mx-auto text-center md:text-left md:flex  justify-between max-w-7xl ">
+<section className="md:py-16 py-10 px-4 md:pl-20 w-full text-center md:text-left md:flex justify-between w-full overflow-hidden  ">
             <motion.div
                 initial="hidden"
                 animate="show"
@@ -67,12 +67,12 @@ export default function Hero() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.4, duration: 0.8, ease: 'easeOut' }}
-                className="mt-10 md:mt-0  flex items-center justify-end flex-1 gap-0 pr-0 relative"
+  className="mt-10 md:mt-0 flex items-center justify-end flex-1 -mr-10 relative"
             >
                 <motion.img
                     src="/assets/father.png"
                     alt="Hydrogen Card"
-                    className="w-full max-w-sm absolute md:left-10 md:mb-20 mb:0 z-0"
+                    className="w-full max-w-sm absolute md:left-10 left-0 md:mb-20 mb:0 z-0"
                     initial={{ x: 0 }}
                     animate={{ x: 14 }}
                     transition={{ duration: 0.6, ease: 'easeOut' }}

@@ -27,7 +27,7 @@ function BenefitBlock({ imageSrc, title, points, reverse = false }: BenefitBlock
         />
       </div>
 
-      {/* Text */}
+  
       <div className="w-full md:w-1/2">
         <h3 className="md:text-[70px] text-3xl font-semibold  mb-6 bg-gradient-to-r from-[#7D7D7D] via-neutral-50 to-neutral-900 bg-clip-text text-transparent">{title}</h3>
         <ul className="text-base md:text-[24px] text-[#737373]">
@@ -42,7 +42,7 @@ function BenefitBlock({ imageSrc, title, points, reverse = false }: BenefitBlock
 
 export default function Benefits() {
   return (
-    <section className="py-24 px-6 max-w-7xl mx-auto space-y-24">
+    <section className="py-24 px-6 md:px-16 max-w-7xl mx-auto space-y-24">
       <BenefitBlock
         imageSrc="/assets/benefit1.png"
         title="Benefits to Customer"

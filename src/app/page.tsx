@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from "react";
-import Image from "next/image";
 import Hero from "./components/Hero";
 import POSKits from "./components/POSKits";
 import BenefitsSection from "./components/Benefit";
